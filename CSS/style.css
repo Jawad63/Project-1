@@ -48,11 +48,11 @@
 .header-image .nav {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: white;
 }
 .header-image .nav .logo {
   margin: auto 2rem;
-  color: white;
+  color: #38B3E8;
   font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
@@ -77,8 +77,8 @@
 .header-image .nav li a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: white;
-  font-weight: 500;
+  color: #006FB7;
+  font-weight: 700;
 }
 
 .container-white {
@@ -193,6 +193,11 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.5s ease-in-out;
+  transform: scale(0.9);
+}
+.container-ivory .ivory-image-container img:hover {
+  transform: scale(1);
 }
 .container-ivory .col-7 .ivory-text-box {
   padding: 7rem;
@@ -223,4 +228,38 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.container-banner-blue {
+  background-color: #38B3E8;
+  padding: 3rem;
+}
+.container-banner-blue .banner-left h2 {
+  color: white;
+  font-size: 3.5rem;
+}
+.container-banner-blue .banner-left h4 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-row .col-3:first-child li {
+  color: #38B3E8;
+  font-weight: 600;
+}
+.footer-row .col-3:nth-child(3) li:last-child {
+  color: #38B3E8;
+  font-weight: 600;
+}
+.footer-row p {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 1rem;
+  margin-left: 2.6rem;
+}
+.footer-row li {
+  list-style-type: none;
+  padding: 0.2rem;
 }/*# sourceMappingURL=style.css.map */
