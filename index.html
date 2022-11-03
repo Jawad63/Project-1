@@ -4,115 +4,239 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>Sport-Vlanderen</title>
+    <link rel="stylesheet" href="./node_modules/the-flex-grid/dist/the-flex-grid.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
 
     <!-- Header Section -->
 
-    <header>
-        <div class="header-image">
-            <div class="header-text">
-                <p>Blijf ook nu</p>
-                <p>sporten en</p>
-                <p>bewegen</p>
-            </div>
+    <header class="header-image">
+        <nav>
+
             <div class="nav">
-                <div class="logo">Sport Vlanderen.</div>
+                <div class="logo"><span>Sport.</span>Vlanderen</div>
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="img-bottom-text">
-                <p>Meest bekeken</p>
-                <br>
-                <ul>
-                    <li>Mountainbikeroutes</li>
-                    <li>Vlaamse Trainersschool</li>
-                    <li>Schrijf je in voor een sportkamp</li>
-                    <li>Maand van de sportclubs</li>
-                </ul>
-            </div>
-        </div>
+            
+        </nav>
     </header>
 
-    <!-- Body -->
+    <!--Main Body -->
 
-    <div class="container">
-        <div class="heading">
-            <h1>In de kijker</h1>
+    <main>
+        <div class="container-white">
+            <div class="heading">
+                <h1>In de kijker</h1>
+            </div>
+    
+            <div class="custom-grid">
+                
+                <div class="col col-one">
+                    <div class="image-text">
+                        <h3>Maand van de Sportclub</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Eum velit, voluptatum doloribus blanditiis <br> saepe veritatis!</p>
+                        <div class="image-button">
+                            <a href="#">meer info</a>
+                        </div>
+                    </div>
+    
+                    <img src="./Images/image-two.jpg" alt="">
+                </div> 
+    
+                <div class="col">
+                    <div class="image-text">
+                        <h3>Maand van de Sportclub</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="image-button">
+                            <a href="#">meer info</a>
+                        </div>
+                    </div>
+                    <img src="./Images/image-three.jpg" alt="">
+                </div>
+    
+                <div class="col">
+                    <div class="image-text">
+                        <h3>Maand van de Sportclub</h3>
+                        <p>Eum velit, voluptatum doloribus blanditiis <br> saepe veritatis!</p>
+                        <div class="image-button">
+                            <a href="#">meer info</a>
+                        </div>
+                    </div>
+                    <img src="./Images/image-four.jpg" alt="">
+                </div>
+    
+                <div class="col">
+                    <div class="image-text">
+                        <h3>Maand van de Sportclub</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> saepe veritatis!</p>
+                        <div class="image-button">
+                            <a href="#">meer info</a>
+                        </div>
+                    </div>
+                    <img src="./Images/image-five.jpg" alt="">
+                </div>
+    
+                <div class="col">
+                    <div class="image-text">
+                        <h3>Maand van de Sportclub</h3>
+                        <p>Eum velit, voluptatum doloribus blanditiis <br> saepe veritatis!</p>
+                        <div class="image-button">
+                            <a href="#">meer info</a>
+                        </div>
+                    </div>
+                    <img src="./Images/image-six.jpg" alt="">
+                </div>
+
+    
+            </div>
+    
+            <div class="button"><a href="#">Blijft op de hoogte</a></div>
+            
         </div>
 
-        <div class="grid-objects">
 
-            <div class="object object-1">
-                <div class="object-text">
-                    <h3>Maand van de Sportclub</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Eum velit, voluptatum doloribus blanditiis <br> saepe veritatis!</p>
-                    <div class="object-button">
-                        <a href="#">meer info</a>
+        <!-- Container Blue -->
+
+        <div class="container-blue">
+            <div class="grid">
+                <div class="row">
+                    <div class="col-12 text-heading">
+                        <h2>Doe aan sport</h2>
+                        <p>Waar, wanneer en met wie je wil.</p>
                     </div>
                 </div>
 
-                <img src="./Images/image-two.jpg" alt="">
-            </div> 
+                <div class="row row-blue">
+                    <div class="col-4 col-small-12 blue-col">
+                        <ul>
+                            <li>Alle sportroutes</li>
+                            <li>Alle sportclub</li>
+                            <li>Alle sportplaats</li>
+                            <li>Sporten op het werk</li>
+                        </ul>
+                    </div>
 
-            <div class="object object-2">
-                <div class="object-text">
-                    <h3>Maand van de Sportclub</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="object-button">
-                        <a href="#">meer info</a>
+                    <div class="col-4 col-small-12 blue-col">
+                        <ul>
+                            <li>Atletiek, wandelen en fietsen</li>
+                            <li>Bal en racketsport</li>
+                            <li>Fitness, gymnastiek, dans en vechtsport</li>
+                            <li>Outdoor en adventure</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-4 col-small-12 blue-col">
+                        <ul>
+                            <li>Omnisport en andere</li>
+                            <li>Volkssporten</li>
+                            <li>Zwemmen en watersport</li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
-                <img src="./Images/image-three.jpg" alt="">
             </div>
-
-            <div class="object object-3">
-                <div class="object-text">
-                    <h3>Maand van de Sportclub</h3>
-                    <p>Eum velit, voluptatum doloribus blanditiis <br> saepe veritatis!</p>
-                    <div class="object-button">
-                        <a href="#">meer info</a>
-                    </div>
-                </div>
-                <img src="./Images/image-four.jpg" alt="">
-            </div>
-
-            <div class="object object-4">
-                <div class="object-text">
-                    <h3>Maand van de Sportclub</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> saepe veritatis!</p>
-                    <div class="object-button">
-                        <a href="#">meer info</a>
-                    </div>
-                </div>
-                <img src="./Images/image-five.jpg" alt="">
-            </div>
-
-            <div class="object object-5">
-                <div class="object-text">
-                    <h3>Maand van de Sportclub</h3>
-                    <p>Eum velit, voluptatum doloribus blanditiis <br> saepe veritatis!</p>
-                    <div class="object-button">
-                        <a href="#">meer info</a>
-                    </div>
-                </div>
-                <img src="./Images/image-six.jpg" alt="">
-            </div>
-
         </div>
 
-        <div class="button"><a href="#">Blijft op de hoogte</a></div>
-        
-    </div>
+
+        <!-- Container Alabaster -->
+
+        <div class="container-ivory">
+            <div class="grid">
+                <div class="row">
+                    <div class="col-5 col-small-12 ivory-image-container">
+                        <img src="./Images/image-two.jpg" alt="">
+                    </div>
+                    <div class="col-7 col-small-12">
+                        <div class="ivory-text-box">
+                            <h2>Sport Vlanderen ondersteunt u</h2>
+                            <p>Sport Vlaanderen is de sportadministratie van de Vlaamse overheid. Onze missie? Zo veel mogelijk mensen blijvend aan het sporten krijgen. Dat is geen gemakkelijke opdracht, maar met onze jarenlange ervaring en expertise gaan we er 110 procent voor.</p>
+                            <div class="ivory-button">
+                                <a href="#">meer info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-7 col-small-12">
+                        <div class="ivory-text-box">
+                            <h2>Ons opleidingsaanbod</h2>
+                            <p>Wil je iets bijleren over sporttraining, sportprestaties, fitheid, redden, beheer van sportinfrastructuur of (jeugd) sportbeleid? Wil je extra competenties verwerven als trainer of sportbegeleider? Is het tijd om je bij te scholen? <br><br> Sinds 1994 organiseert en erkent de Vlaamse Trainersschool, kortweg VTS, het hele jaar door kwalitatieve en toegankelijke sportkaderopleidingen.</p>
+                            <div class="ivory-button">
+                                <a href="#">meer info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-small-12 ivory-image-container">
+                        <img src="./Images/image-three.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- White container -->
+
+        <div class="container-white">
+            <div class="heading">
+                <h2>Laat je inspireren</h2>
+            </div>
+
+            <div class="grid">
+                <div class="row">
+
+                    <div class="col-3 col-small-12 white-image-container">
+                        <div class="image-text">
+                            <h2>Jaarlijks organiseren we meer dan 1000 sportkampen</h2>
+                            <p>Van Blankenberge tot Genk, in elk van onze centra amuseren kinderen vanaf 8 jaar zich rot en maken ze op enthousiaste wijze kennis met heel wat nieuwe sporten. En met elkaar.</p>
+                            <div class="image-button">
+                                <a href="#">meer info</a>
+                            </div>
+                        </div>
+                        <img src="./Images/image-seven.jpg" alt="">
+                    </div>
+
+                    <div class="col-3 col-small-12 white-image-container">
+                        <div class="image-text">
+                            <h2>Sporten is gezond, als je gezond sport</h2>
+                            <p>Bewegen en sporten maken ons fitter en gezonder, we leven er langer door en zien er beter uit. Zelfs onze levenskwaliteit gaat erop vooruit.</p>
+                            <div class="image-button">
+                                <a href="#">meer info</a>
+                            </div>
+                        </div>
+                        <img src="./Images/image-six.jpg" alt="">
+                    </div>
+
+                    <div class="col-3 col-small-12 white-image-container">
+                        <div class="image-text">
+                            <h2>Samen voor een sterk G-sportbeleid in Vlaanderen</h2>
+                            <p>Dat sport gezond is geldt ook voor G-sporters. Om in de juiste omstandigheden te kunnen sporten, hebben zij specifieke begeleiding en omkadering en vaak ook aangepaste sportinfrastructuur nodig.</p>
+                            <div class="image-button">
+                                <a href="#">meer info</a>
+                            </div>
+                        </div>
+                        <img src="./Images/image-four.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
     
 </body>
 </html>
