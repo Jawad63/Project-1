@@ -68,7 +68,7 @@
   width: -moz-fit-content;
   width: fit-content;
 }
-.header-image .img-bottom-text {
+.header-image .header-bottom-text {
   position: absolute;
   right: 7rem;
   bottom: 13rem;
@@ -76,10 +76,10 @@
   color: white;
   padding: 3rem;
 }
-.header-image .img-bottom-text p {
+.header-image .header-bottom-text p {
   font-size: 2rem;
 }
-.header-image .img-bottom-text ul li {
+.header-image .header-bottom-text ul li {
   padding-bottom: 0.5rem;
   font-size: 1rem;
   list-style: upper-roman;
@@ -311,12 +311,12 @@
   .header-image .header-text h1 {
     font-size: 2rem;
   }
-  .header-image .img-bottom-text {
+  .header-image .header-bottom-text {
     padding: 1rem;
     left: 0.5rem;
     bottom: 17rem;
   }
-  .header-image .img-bottom-text p {
+  .header-image .header-bottom-text p {
     text-align: center;
   }
   .header-image .nav {
