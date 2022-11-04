@@ -45,6 +45,45 @@
   width: 100%;
   height: 70vh;
 }
+.header-image .header-text {
+  position: absolute;
+  top: 9rem;
+  left: 4rem;
+}
+.header-image .header-text h1 {
+  color: white;
+  font-size: 3rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header-image .header-text p:nth-child(2) {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.header-image .header-text p:last-child {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.header-image .img-bottom-text {
+  position: absolute;
+  right: 7rem;
+  bottom: 13rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 3rem;
+}
+.header-image .img-bottom-text p {
+  font-size: 2rem;
+}
+.header-image .img-bottom-text ul li {
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  list-style: upper-roman;
+}
 .header-image .nav {
   display: flex;
   justify-content: space-between;
@@ -231,11 +270,14 @@
   background-color: #38B3E8;
   padding: 3rem;
 }
-.container-banner-blue .banner-left h2 {
+.container-banner-blue .banner {
+  text-align: center;
+}
+.container-banner-blue .banner h2 {
   color: white;
   font-size: 3.5rem;
 }
-.container-banner-blue .banner-left h4 {
+.container-banner-blue .banner h4 {
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
@@ -262,15 +304,30 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .nav {
+  .header-image .header-text {
+    left: 0;
+    top: 12.5rem;
+  }
+  .header-image .header-text h1 {
+    font-size: 2rem;
+  }
+  .header-image .img-bottom-text {
+    padding: 1rem;
+    left: 0.5rem;
+    bottom: 17rem;
+  }
+  .header-image .img-bottom-text p {
+    text-align: center;
+  }
+  .header-image .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .nav nav {
+  .header-image .nav nav {
     display: none;
   }
-  .nav ul {
+  .header-image .nav ul {
     padding: 0;
   }
   .container-blue {
@@ -312,17 +369,16 @@
   .container-banner-blue {
     padding: 1rem;
   }
-  .container-banner-blue .banner-left {
+  .container-banner-blue .banner {
     text-align: center;
   }
-  .container-banner-blue .banner-left h2 {
+  .container-banner-blue .banner h2 {
     font-size: 2rem;
   }
-  .container-banner-blue .banner-left h4 {
+  .container-banner-blue .banner h4 {
     font-size: 1.2rem;
   }
-  .footer-row .row-top {
-    display: flex;
-    flex-direction: column;
+  .footer-row {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

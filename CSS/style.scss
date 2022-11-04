@@ -60,6 +60,52 @@ $ivory-color: #F6F5ED;
     width: 100%;
     height: 70vh;
 
+    .header-text {
+        position: absolute;
+        top: 9rem;
+        left: 4rem;
+
+        h1 {
+            color: white;
+            font-size: 3rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            font-weight: 700;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        p:nth-child(2) {
+            width: fit-content;
+        }
+
+        p:last-child {
+            width: fit-content;
+        }
+    }
+
+
+    .img-bottom-text {
+        position: absolute;
+        right: 7rem;
+        bottom: 13rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 3rem;
+
+        p {
+            font-size: 2rem;
+        }
+
+        ul {
+            li {
+                padding-bottom: 0.5rem;
+                font-size: 1rem;
+                list-style:upper-roman ;
+
+            }
+        }
+    }
+
 
     .nav {  
         display: flex;
@@ -157,7 +203,6 @@ $ivory-color: #F6F5ED;
             background-color: $primary-color;
             color: white;
         }
-
 
     }
 }
@@ -280,7 +325,6 @@ $ivory-color: #F6F5ED;
         justify-content: center;
     }
 
-
     .white-image-container {
         width: auto;
         height: auto;
@@ -301,7 +345,8 @@ $ivory-color: #F6F5ED;
     background-color: $secondary-blue ;
     padding: 3rem;
 
-    .banner-left {
+    .banner {
+        text-align: center;
         
         h2 {
             color: white;
@@ -346,9 +391,6 @@ $ivory-color: #F6F5ED;
         }
     }
 
-
-
-
     li {
         list-style-type: none;
         padding: 0.2rem;
@@ -361,18 +403,42 @@ $ivory-color: #F6F5ED;
 
 @media only screen and (max-width: 600px) {
 
-    .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .header-image {
 
-        nav {
-            display: none;
+        .header-text {
+            left: 0;
+            top: 12.5rem;
+
+            h1 {
+                font-size: 2rem;
+            }
         }
 
-        ul {
-            padding: 0;
+
+        .img-bottom-text {
+            padding: 1rem;
+            left: 0.5rem;
+            bottom: 17rem;
+
+            p {
+                text-align: center;
+            }
         }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            nav {
+                display: none;
+            }
+    
+            ul {
+                padding: 0;
+            }
+        }
+
     }
 
     .container-blue {
@@ -435,7 +501,7 @@ $ivory-color: #F6F5ED;
     .container-banner-blue {
         padding: 1rem;
 
-        .banner-left {
+        .banner {
             text-align: center;
 
             h2 {
@@ -448,12 +514,8 @@ $ivory-color: #F6F5ED;
         }
     }
 
-
     .footer-row {
-        .row-top {
-            display: flex;
-            flex-direction: column;
-        }
+        display: none;
     }
 }
 
