@@ -103,7 +103,7 @@ body {
             span {
                 font-size: 2.5rem;
                 font-weight: 900;
-                color: $primary-color;
+                color: $primary-blue;
                 
             }
         }
@@ -120,7 +120,7 @@ body {
             a {
                 text-decoration: none;
                 font-size: 1.2rem;
-                color: $primary-color;
+                color: $primary-blue;
                 font-weight: 700;
             }
         }
@@ -143,7 +143,7 @@ footer {
 
             .heading {
                 text-align: center;
-                color: $primary-color;
+                color: $primary-blue;
                 padding-bottom: 1.5rem;
 
                 h2 {
@@ -185,12 +185,12 @@ footer {
                 a {
                     text-decoration: none;
                     padding: 0.7rem;
-                    border: 1px solid $primary-color;
+                    border: 1px solid $primary-blue;
                     transition: 0.5s ease-in-out;
-                    color: $primary-color;
+                    color: $primary-blue;
 
                     &:hover {
-                        background-color: $primary-color;
+                        background-color: $primary-blue;
                         color: white;
                     }
                 }
@@ -249,7 +249,7 @@ footer {
         // Container Blue
 
         &__blue {
-            background-color: $primary-color;
+            background-color: $primary-blue;
             padding: 5rem;
         
             .text-heading {
@@ -292,7 +292,7 @@ footer {
             
                 .blue-col:nth-child(1) {
                     background-color: white;
-                    color: $primary-color;
+                    color: $primary-blue;
                 }
             }
         }
@@ -300,7 +300,7 @@ footer {
         // Container Ivory
 
         &__ivory {
-            background-color: $ivory-color;
+            background-color: $ivory;
             padding: 5rem 3rem;   
             
             
@@ -343,7 +343,7 @@ footer {
                             font-size: 3.5rem;
                             font-weight: 700;
                             padding-bottom: 1rem;
-                            color: $gray-color;
+                            color: $gray;
                         }
                     }
                 }
@@ -355,12 +355,12 @@ footer {
                         text-decoration: none;
                         padding: 0.5rem;
                         transition: .5s ease-in-out;
-                        color: $primary-color;
-                        border: 2px solid $primary-color;
+                        color: $primary-blue;
+                        border: 2px solid $primary-blue;
     
                         &:hover {
                             color: white;
-                            background-color: $primary-color;
+                            background-color: $primary-blue;
                         }
                     }
                 }
@@ -374,11 +374,11 @@ footer {
         // banner blue: 
 
         &__banner-blue {
-            background-color: $secondary-blue ;
+            background-color: $secondary-blue;
             padding: 3rem;
 
-            .banner {
-                text-align: center;
+            .banner-left {
+                text-align: left;
                 
                 h2 {
                     color: white;
@@ -389,6 +389,26 @@ footer {
                     color: white;
                     font-size: 1.5rem;
                     font-weight: 700;
+                }
+            }
+
+            .banner-right {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: right;
+                margin: 1rem;
+
+                .icon-style {
+                    width: 56px;
+                    height: 56px;
+                    background-color: white;
+                    border-radius: 50%;
+                    margin: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $gray;
                 }
             }
         }
@@ -429,9 +449,6 @@ footer {
         }
     }
 }
-
-
-
 
 
 
