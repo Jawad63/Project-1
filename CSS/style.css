@@ -24,25 +24,6 @@ body {
   color: black;
 }
 
-.image-text {
-  position: absolute;
-  left: 1rem;
-  bottom: 2rem;
-  color: white;
-  text-align: left;
-  padding: 1rem;
-}
-.image-text h3 {
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-  color: white;
-}
-.image-text p {
-  font-size: 1rem;
-  font-weight: 400;
-  color: white;
-}
-
 .header-image {
   background-image: url("../Images/image-two.jpg");
   background-position: center;
@@ -196,8 +177,8 @@ footer .container__white .row {
 }
 main .container__white .white-image-container,
 footer .container__white .white-image-container {
-  width: auto;
-  height: auto;
+  width: 416px;
+  height: 560px;
   overflow: hidden;
   position: relative;
 }
@@ -207,6 +188,33 @@ footer .container__white .white-image-container img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+main .container__white .image-text,
+footer .container__white .image-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  text-align: left;
+  margin: 0.5rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  bottom: 2%;
+}
+main .container__white .image-text h3,
+footer .container__white .image-text h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+main .container__white .image-text p,
+footer .container__white .image-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
 }
 main .container__blue,
 footer .container__blue {
