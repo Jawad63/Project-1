@@ -29,8 +29,6 @@ body {
 }
 
 
-
-
 .header-image {
     background-image: url("../Images/image-two.jpg");
     background-position: center;
@@ -246,6 +244,7 @@ footer {
         }
 
 
+
         // Container Blue
 
         &__blue {
@@ -379,6 +378,7 @@ footer {
 
             .banner-left {
                 text-align: left;
+                padding-left: 3rem;
                 
                 h2 {
                     color: white;
@@ -397,6 +397,7 @@ footer {
                 flex-direction: row;
                 align-items: center;
                 justify-content: right;
+                padding-right: 1rem;
                 margin: 1rem;
 
                 .icon-style {
@@ -450,126 +451,5 @@ footer {
     }
 }
 
-
-
-// Media Queries: 
-
-@media only screen and (max-width: 600px) {
-
-    .header-image {
-
-        .header-text {
-            left: 0;
-            top: 12.5rem;
-
-            h1 {
-                font-size: 2rem;
-            }
-        }
-
-
-        .header-bottom-text {
-            padding: 1rem;
-            left: 0.5rem;
-            bottom: 17rem;
-
-            p {
-                text-align: center;
-            }
-        }
-
-        .nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-    
-            nav {
-                display: none;
-            }
-    
-            ul {
-                padding: 0;
-            }
-        }
-
-    }
-
-    .container-blue {
-      padding: 2rem;
-
-
-      .row-blue {
-        .blue-col {
-            display: block;
-            padding: 1rem;
-            list-style: none;
-        }
-      }
-    }
-
-    .container-ivory {
-        padding: 1rem;
-
-        .col-7 {
-            .ivory-text-box {
-                padding: 1rem;
-
-                h2 {
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        .ivory-image-container {
-            img {
-                transform: scale(1);
-            }
-        }
-
-        .ivory-button  {
-            padding-bottom: 1rem;
-        }
-    }
-
-
-    .container-white {
-        padding: 1rem;
-
-        .custom-grid {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .image-text {
-            h3 {
-                padding: 0;
-            }
-        }
-
-        .button {
-            padding-bottom: 1rem;
-        }
-    }
-
-    .container-banner-blue {
-        padding: 1rem;
-
-        .banner {
-            text-align: center;
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            h4 {
-                font-size: 1.2rem;
-            }
-        }
-    }
-
-    .footer-row {
-        display: none;
-    }
-}
 
 
