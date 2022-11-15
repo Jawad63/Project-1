@@ -1,1 +1,11 @@
-/*# sourceMappingURL=variables.css.map */
+.arrow-on-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.arrow-on-right .fa-arrow-right {
+  color: #38B3E8;
+  width: 12.24px;
+  height: 12.21px;
+}/*# sourceMappingURL=variables.css.map */
