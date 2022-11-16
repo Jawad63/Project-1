@@ -60,32 +60,11 @@ body {
     }
 
 
-    .header-bottom-text {
-        position: absolute;
-        right: 7rem;
-        bottom: 13rem;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 3rem;
-
-        p {
-            font-size: 2rem;
-        }
-
-        ul {
-            li {
-                padding-bottom: 0.5rem;
-                font-size: 1rem;
-                list-style:upper-roman ;
-
-            }
-        }
-    }
-
-
     .nav {  
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
         background-color: white;
 
         .logo {
@@ -106,20 +85,56 @@ body {
             }
         }
 
-        ul {
+        &__menu {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
             list-style: none;
-        }
-
-        li {
-            list-style: none;
-            margin: 1.5rem;
+            gap: 3rem;
 
             a {
                 text-decoration: none;
                 font-size: 1.2rem;
                 color: $primary-blue;
                 font-weight: 700;
+            }
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            padding-right: 2rem;
+
+            &__bar {
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                background-color: $primary-blue;
+                -webkit-transition: all 0.3s ease-in-out;
+            }
+            
+        }
+    }
+
+
+    .header-bottom-text {
+        position: absolute;
+        right: 7rem;
+        bottom: 13rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 3rem;
+
+        p {
+            font-size: 2rem;
+        }
+
+        ul {
+            li {
+                padding-bottom: 0.5rem;
+                font-size: 1rem;
+                list-style:upper-roman ;
+
             }
         }
     }

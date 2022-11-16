@@ -1,3 +1,5 @@
+@import 'variables';
+
 // Media Queries: 
 
 @media only screen and (max-width: 600px) {
@@ -25,19 +27,31 @@
         }
 
         .nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-    
-            nav {
-                display: none;
+
+            &__menu {
+               position: fixed;
+               right: -100%;
+               top: 80px;
+               gap: 0;
+               flex-direction: column;
+               background-color: white;
+               width: 100%;
+               text-align: center;
+               transition: .3s ease-in-out;
             }
-    
-            ul {
-                padding: 0;
+
+            &__menu.active {
+                right: 0;
+            }
+
+            &__link {
+                padding: 0.7rem;
+            }
+
+            .hamburger {
+                display: block;
             }
         }
-
     }
 
 
@@ -71,7 +85,7 @@
                 .row-blue {
                     .blue-col {
                         display: block;
-                        padding: 1rem;
+                        padding: 1rem 2rem;
                         list-style: none;
                     }
                 }

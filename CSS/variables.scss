@@ -3,19 +3,3 @@ $primary-blue: #006FB7;
 $secondary-blue: #38B3E8;
 $ivory: #F6F5ED;
 $gray: #363635;
-
-
-
-
-.arrow-on-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    
-    .fa-arrow-right {
-        color: $secondary-blue;
-        width: 12.24px;
-        height: 12.21px;
-    }
-}
