@@ -6,44 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sport-Vlanderen</title>
     <link rel="stylesheet" href="./node_modules/the-flex-grid/dist/the-flex-grid.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/brands.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/solid.css">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/queries.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <!-- Header Section -->
 
-    <header class="header-image">
-
-        
-        <div class="header-text">
-            <h1>Blijf ook nu <br> sporten en <br> bewegen</h1>
-        </div>
+    <header class="header">
 
         <nav class="nav">
             <div class="logo"><span>Sport.</span>Vlanderen</div>
             
             <ul class="nav nav__menu">
 
-                <li class="nav nav__item">
-                    <a href="#" class="nav nav__link">Home</a>
+                <li class="nav nav__item drop-down">
+                    <div class="select">
+                        <a href="#" class="nav nav__link">Sporten & bewegen</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="menu">
+                        <div class="nav__container">
+                            <ul>
+                                <p>Vind een...</p>
+                                <li>Sportroute</li>
+                                <li>Sportactiviteit</li>
+                                <li>sportkamp</li>
+                                <li>sportclub</li>
+                                <li>sporties</li>
+                            </ul>
+                            <ul class="menu__white">
+                                <p>#sportersbelevenmeer</p>
+                                <li>Maand van de sportclub</li>
+                                <li>Multimove voor kinderen</li>
+                                <li>Buiten beleef je meer</li>
+                                <li>10.000 stappen, elke stap telt</li>
+                                <li>Europese Week van de Sport</li>
+                            </ul>
+                            <ul class="menu__white">
+                                <p>Samen bewegen...</p>
+                                <li>met je gezin</li>
+                                <li>met je bedrijf</li>
+                                <li>met je school</li>
+                                <li>met je gemeente</li>
+                                <li>in onze centra</li>
+                            </ul>
+                            <ul class="menu__white">
+                                <p>Laat je inspireren</p>
+                                <li>Sport en omgeving</li>
+                                <li>Ethisch en gewond sporten</li>
+                                <li>Innovatieve sportvormen</li>
+                                <li>Europa en sport</li>
+                                <li>Sport en integriteit</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav nav__item drop-down">
+                    <a href="#" class="nav nav__link">Onze dienstverlening</a>
+                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
                 </li>
 
                 <li class="nav__item">
-                    <a href="#" class="nav nav__link">About</a>
+                    <a href="#" class="nav nav__link">Vlaamse Trainersschool</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#" class="nav nav__link">Portfolio</a>
+                    <a href="#" class="nav nav__link">Onze centra</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#" class="nav nav__link">Services</a>
+                    <a href="#" class="nav nav__link">Sportkampen</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#" class="nav nav__link">Contact</a>
+                    <a href="#" class="nav nav__link">Kennisplatform</a>
                 </li>
 
             </ul>
@@ -54,15 +94,33 @@
             </div>
         </nav>
 
-        <div class="header-bottom-text">
-            <p>Meest bekeken</p>
-            <br>
-            <ul>
-                <li>Mountainbikeroutes</li>
-                <li>Vlaamse Trainersschool</li>
-                <li>Schrijf je in voor een sportkamp</li>
-                <li>Maand van de sportclubs</li>
-            </ul>
+        <div class="header__text-top">
+            <h1><span>Blijf ook nu</span><span>sporten en</span><span>bewegen</span></h1>
+        </div>
+
+        <div class="header__text-bottom col-medium-6">
+            <h2>Meest bekeken</h2>
+
+            <div class="arrow-on-right">
+                <i class="fa-solid fa-arrow-right"></i>
+                <p>Mountainbikeroutes</p>
+            </div>
+
+            <div class="arrow-on-right">
+                <i class="fa-solid fa-arrow-right"></i>
+                <p>Vlaamse Trainersschool</p>
+            </div>
+
+            <div class="arrow-on-right">
+                <i class="fa-solid fa-arrow-right"></i>
+                <p>Schrijf je in voor een sportkamp</p>
+            </div>
+
+            <div class="arrow-on-right">
+                <i class="fa-solid fa-arrow-right"></i>
+                <p>Maand van de sportclubs</p>
+            </div>
+
         </div>
             
     </header>
@@ -153,7 +211,7 @@
                 </div>
 
                 <div class="row row-blue">
-                    <div class="col-4 col-small-12 blue-col">
+                    <div class="col-4 col-small-12 col-medium-12 blue-col">
                         <ul>
                             <div class="arrow-on-right">
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -178,7 +236,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-4 col-small-12 blue-col">
+                    <div class="col-4 col-small-12 col-medium-12 blue-col">
                         <ul>
                             <div class="arrow-on-right">
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -202,7 +260,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-4 col-small-12 blue-col">
+                    <div class="col-4 col-small-12 col-medium-12 blue-col">
                         <ul>
 
                             <div class="arrow-on-right">
@@ -233,10 +291,10 @@
             <div class="grid">
 
                 <div class="row">
-                    <div class="col-5 col-small-12 ivory-image-container">
+                    <div class="col-5 col-small-12 col-medium-12 ivory-image-container">
                         <img src="./Images/image-two.jpg" alt="">
                     </div>
-                    <div class="col-7 col-small-12 ivory-text-container">
+                    <div class="col-7 col-small-12 col-medium-12 ivory-text-container">
                         <div class="ivory-text-box">
                             <h2>Sport Vlanderen <br> ondersteunt u</h2>
                             <p>Sport Vlaanderen is de sportadministratie van de Vlaamse overheid. Onze missie? Zo veel mogelijk mensen blijvend aan het sporten krijgen. Dat is geen gemakkelijke opdracht, maar met onze jarenlange ervaring en expertise gaan we er 110 procent voor.</p>
@@ -248,7 +306,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-7 col-small-12 ivory-text-container">
+                    <div class="col-7 col-small-12 col-medium-12 ivory-text-container">
                         <div class="ivory-text-box">
                             <h2>Ons <br> opleidingsaanbod</h2>
                             <p>Wil je iets bijleren over sporttraining, sportprestaties, fitheid, redden, beheer van sportinfrastructuur of (jeugd) sportbeleid? Wil je extra competenties verwerven als trainer of sportbegeleider? Is het tijd om je bij te scholen? <br><br> Sinds 1994 organiseert en erkent de Vlaamse Trainersschool, kortweg VTS, het hele jaar door kwalitatieve en toegankelijke sportkaderopleidingen.</p>
@@ -257,7 +315,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5 col-small-12 ivory-image-container">
+                    <div class="col-5 col-small-12 col-medium-12 ivory-image-container">
                         <img src="./Images/image-three.jpg" alt="">
                     </div>
                 </div>
@@ -276,7 +334,7 @@
             <div class="grid">
                 <div class="row">
 
-                    <div class="col-3 col-small-12 white-image-container">
+                    <div class="col-3 col-small-12 col-medium-6 container__white__image">
                         <div class="image-text">
                             <h3>Jaarlijks organiseren we meer dan 1000 sportkampen</h3>
                             <p>Van Blankenberge tot Genk, in elk van onze centra amuseren kinderen vanaf 8 jaar zich
@@ -289,7 +347,7 @@
                         <img src="./Images/image-seven.jpg" alt="">
                     </div>
 
-                    <div class="col-3 col-small-12 white-image-container">
+                    <div class="col-3 col-small-12 col-medium-6 container__white__image">
                         <div class="image-text">
                             <h3>Sporten is gezond, als je gezond sport</h3>
                             <p>Bewegen en sporten maken ons fitter en gezonder, we leven er langer door en zien
@@ -301,7 +359,7 @@
                         <img src="./Images/image-six.jpg" alt="">
                     </div>
 
-                    <div class="col-3 col-small-12 white-image-container">
+                    <div class="col-3 col-small-12 col-medium-12 container__white__image">
                         <div class="image-text">
                             <h3>Samen voor een sterk G-sportbeleid in Vlaanderen</h3>
                             <p>Dat sport gezond is geldt ook voor G-sporters. Om in de juiste omstandigheden te
@@ -321,7 +379,7 @@
     </main>
 
     <!-- Footer -->
-        <!-- banner -->
+    <!-- banner -->
     <footer>
         <div class="container container__banner-blue">
             <div class="grid">
@@ -437,7 +495,7 @@
         </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./JS/navbar.js"></script>
     
 </body>
 </html>
